@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Contact</title>
+
+    <meta name="description" content="This is website for learning HTML and CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="CSS, html, javascript, portfolio, website">
+    <meta name="author" content="Chris Kilgour">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Oswald:wght@300&family=Rampart+One&family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+
+    <script type='text/javascript' src="portfolioWebsite.js"></script>
+
+</head>
+
+<!--body with my inload function for the customer comments-->
+
+<body onload="myLoad()">
+
+    <!--header navigation-->
+
+    <header>
+
+        <a href="index.html" class="header-brand">CDK</a>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="save_for_later.html">Save for later folder</a></li>
+
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <!--contact header-->
+
+        <section class="contact-banner">
+
+            <div class="vertical-center">
+
+                <h1>Get in touch with me</h1>
+
+            </div>
+
+        </section>
+
+        <!--contact form-->
+
+        <div class="contact-wrapper">
+
+            <section class="contact-form">
+
+
+
+                <form>
+                    <input type="text" name="firstname" placeholder="First Name">
+                    <input type="text" name="lastname" placeholder="Last Name">
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="phone" placeholder="Phone">
+                    <textarea name="message" placeholder="Write a message!"></textarea>
+                    <input type="submit" name="submit">
+                </form>
+
+            </section>
+
+            <!--radio button form-->
+
+            <p>Choose your favorite Web language:</p>
+
+             <form class="radioBtForm" id="radioBtForm">
+                   <input type="radio" id="html" name="fav_language" value="HTML">
+                   <label for="html">HTML</label><br>
+                   <input type="radio" id="css" name="fav_language" value="CSS">
+                   <label for="css">CSS</label><br>
+                   <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                   <label for="javascript">JavaScript</label>
+            </form> 
+
+            <!--social media links-->
+
+            <section class="alterantive-ways-to-contact">
+
+                <h1>Please feel free to contact me on any <br> of my socials below:</h1>
+
+                <a href="https://www.facebook.com/christopher.kilgour.3/">
+                    <div class="contact-socials">
+                        <h2>Facebook</h3>
+                    </div>
+                </a>
+
+                <a href="https://twitter.com/Chris_Tippmann">
+                    <div class="contact-socials">
+                        <h3>Twitter</h3>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/chris_kilgour/">
+                    <div class="contact-socials">
+                        <h3>Instagram</h3>
+                    </div>
+                </a>
+
+        </div>
+
+        </section>
+
+    </main>
+
+    <!--comment heading-->
+
+    <h2 id="commentHeader">Please feel free to leave a comment below and view others' comments</h2>
+
+    <!--comment form-->
+
+    <form id="commentForm">
+     
+         <label for="fullName">Please enter your full name</label> <br>
+         <input type="text" name="fullName" id="fullName" required> <br> <br>
+
+         <label for="comment">Please feel free to leave a comment</label> <br> 
+         <input type="text" name="comment" id="comment" required> <br> <br>
+
+         <button onclick="addComment()">Add comment to our page</button> <br> <br>
+
+         <select id="commentList" onchange="displayComment(this.value)">
+            <option value="">--Please choose a comment that you would like to view--</option>
+            </select>
+
+    </form>
+
+    <!--div where comments show-->
+
+    <div id="comments">
+    
+     <script type='text/javascript' src="portfolioWebsite.js"></script>
+
+    </div> <br> <br>
+
+    <!--footer navigation-->
+
+    <div class="wrapper">
+
+        <footer>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="portfolio.html">Portfolio</a></li>
+
+                <li><a href="about.html">About me</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="footer-sm">
+
+                <a href="https://www.facebook.com/christopher.kilgour.3/">
+                    <img src="img/facebook-logo-button.png" alt="facebook icon">
+                </a>
+
+                <a href="https://twitter.com/Chris_Tippmann">
+                    <img src="img/twitter-logo-button.png" alt="twitter icon">
+                </a>
+
+                <a href="https://www.instagram.com/chris_kilgour/">
+                    <img src="img/instagram-logo-button.png" alt="instagram icon">
+                </a>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

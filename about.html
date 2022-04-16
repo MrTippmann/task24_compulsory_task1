@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>About me</title>
+
+    <meta name="description" content="This is website for learning HTML and CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="CSS, html, javascript, portfolio, website">
+    <meta name="author" content="Chris Kilgour">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cardo:ital@1&family=M+PLUS+1p:wght@300&family=Oswald:wght@300&family=Rampart+One&family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+
+    <script type='text/javascript' src="portfolioWebsite.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+
+</head>
+
+<body>
+
+    <!--logo home btn-->
+
+    <header>
+
+        <a href="index.html" class="header-brand">CDK</a>
+
+
+        <!--navigation start-->
+
+        <nav>
+
+            <ul>
+
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="save_for_later.html">Save for later folder</a></li>
+
+            </ul>
+
+        </nav>
+
+        <!--navigation end-->
+
+    </header>
+
+    <div class="about-me-text">
+
+        <h>About me</h>
+
+        <p>My name is Christopher Daniel Kilgour. I am an up and coming developer with a drive for self-improvement. I am currently comfortable with HTML, CSS, JAVASCRIPT and PHP. My hobbies include darts and gaming. If I have learnt anything in life it
+            is the fact that nothing in life worth doing is easy. Here is a quote that I live by: "Some people want it to happen, some people wish it would happen, others make it happpen." - Michael Jordan
+        </p>
+    </div>
+
+    </main-header>
+
+    <main class="about-main">
+
+        <!--image slider start-->
+
+        <div class="slider">
+
+            <div class="slides">
+
+                <!--radio buttons start-->
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <!--radio buttons end-->
+
+                <!--slide images start-->
+
+                <div class="slide first">
+                    <img src="img/jpg1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="img/jpg2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="img/jpg3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="img/jpg4.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="img/jpg5.jpg" alt="">
+                </div>
+
+                <!--slide images end-->
+
+                <!--automatic navigation start-->
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+
+                <!--automatic navigation end-->
+
+            </div>
+
+            <!--manual navigation start-->
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+
+            <!--manual navigation start-->
+
+        </div>
+
+        <!--image slider end-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function() {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 5) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+<button class="saveForLaterButtonPictures">Save these pictures to your folder</button>
+
+</main>
+
+     <div id="accordion-wrapper">
+     <!-- div for the first card in the drop down menu -->
+     <div class="card">
+        <!-- title for the first card in the accordion drop down menu -->
+         <p class="card-title">Hobbies:</p>
+        <!-- body for the first card in the accordion drop down menu -->
+        <div class="card-body">
+
+             <ul>
+             <li>Gaming</li>
+             <li>Darts</li>
+             <li>Watching sports</li>
+             </ul>
+
+         </div>
+
+     </div>
+     <!-- div for the second card in the drop down menu -->
+     <div class="card">
+         <!-- title for the second card in the accordion drop down menu -->
+         <p class="card-title">Favourite foods:</p>
+        <!-- body for the second card in the accordion drop down menu -->
+        <div class="card-body">
+
+             <ul>
+             <li>Pasta</li>
+             <li>Pizza</li>
+             <li>burgers</li>
+             </ul>
+
+        </div>
+
+     </div>
+     <!-- div for the third card in the drop down menu -->
+     <div class="card">
+         <!-- title for the third card in the accordion drop down menu -->
+         <p class="card-title">Music I listen to:</p>
+        <!-- body for the third card in the accordion drop down menu -->
+        <div class="card-body">
+
+             <ul>
+             <li>Metal</li>
+             <li>Rock n' Roll</li>
+             <li>Pop</li>
+             </ul>
+
+        </div>
+
+     </div>
+
+     <!--fun butoon with animations-->
+
+     <button class="animationButton">Press here for fun!</button>
+
+     <h3 class="likeHeader2">Do you like my images?</h3>
+
+     <!--Like form where user can say if they like the image-->
+
+     <form class="likeForm2" id="likeForm">
+           <input type="radio" id="yes" value="Yes" class="answerLikeForm2>
+           <label for="yes" class="answerLikeForm2">Yes</label><br>
+           <input type="radio" id="no" value="No" class="answerLikeForm2>
+           <label for="no" class="answerLikeForm2">No</label><br>
+    </form> 
+
+    <!--saveForLaterButton-->
+
+    <button class="saveForLaterButtonDropDown">Save this dropdown to your folder</button>
+
+    <div class="wrapper">
+
+        <!--footer start-->
+
+        <footer>
+
+            <!--footer navigation btns start-->
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="portfolio.html">Portfolio</a></li>
+
+                <li><a href="about.html">About me</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!--footer navigation btns start-->
+
+            <!--footer social media links start-->
+
+            <div class="footer-sm">
+
+                <a href="https://www.facebook.com/christopher.kilgour.3/">
+                    <img src="img/facebook-logo-button.png" alt="facebook icon">
+                </a>
+
+                <a href="https://twitter.com/Chris_Tippmann">
+                    <img src="img/twitter-logo-button.png" alt="twitter icon">
+                </a>
+
+                <a href="https://www.instagram.com/chris_kilgour/">
+                    <img src="img/instagram-logo-button.png" alt="instagram icon">
+                </a>
+
+            </div>
+
+            <!--footer social media links end-->
+
+        </footer>
+
+        <!--footer end-->
+
+    </div>
+
+</body>
+
+</html>

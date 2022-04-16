@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>This is my portfolio website</title>
+
+    <meta name="description" content="This is website for learning HTML and CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="CSS, html, javascript">
+    <meta name="author" content="Chris Kilgour">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Rampart+One&family=Rubik+Beastly&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+
+    <script type='text/javascript' src="portfolioWebsite.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--header navigation-->
+
+        <a href="index.html" class="header-brand">CDK</a>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="save_for_later.html">Save for later folder</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!--main banner-->
+
+        <section class="index-banner">
+
+            <div class="vertical-center">
+
+                <button class="saveForLaterButtonIndex" onclick="saveForLaterIndex()">Save this image to your folder</button>
+
+                <h2>I AM A<br>WEB<br>DEVELOPER</h2>
+
+                <h1>With knowledge in front-end development, Search Engine Optimization and back-end development.</h1>
+
+                <!--like form-->
+
+                <h3 class="likeHeader">Do you like this background?</h3>
+
+             <form class="likeForm" id="likeForm">
+                   <input type="radio" id="yes" value="Yes" class="answerLikeForm>
+                   <label for="yes" class="answerLikeForm">Yes</label><br>
+                   <input type="radio" id="no" value="No" class="answerLikeForm>
+                   <label for="no" class="answerLikeForm">No</label><br>
+            </form> 
+
+            </div>
+
+        </section>
+
+        <!--nav and social links-->
+
+        <div class="wrapper">
+
+            <section class="index-links">
+
+                <a href="portfolio.html">
+                    <div class="index-boxlink-square">
+                        <h3>Portfolio</h3>
+                    </div>
+                </a>
+
+                <a href="about.html">
+                    <div class="index-boxlink-rectangle">
+                        <h3>About me</h3>
+                    </div>
+                </a>
+
+                <a href="contact.html">
+                    <div class="index-boxlink-square">
+                        <h3>Contact</h3>
+                    </div>
+                </a>
+
+                <a href="https://www.facebook.com/christopher.kilgour.3/">
+                    <div class="index-boxlink-square">
+                        <h3>Facebook</h3>
+                    </div>
+                </a>
+
+                <a href="https://twitter.com/Chris_Tippmann">
+                    <div class="index-boxlink-rectangle">
+                        <h3>Twitter</h3>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/chris_kilgour/">
+                    <div class="index-boxlink-square">
+                        <h3>Instagram</h3>
+                    </div>
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <div class="wrapper">
+
+        <!--footer navigation-->
+
+        <footer>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="portfolio.html">Portfolio</a></li>
+
+                <li><a href="about.html">About me</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="footer-sm">
+
+                <a href="https://www.facebook.com/christopher.kilgour.3/">
+                    <img src="img/facebook-logo-button.png" alt="facebook icon">
+                </a>
+
+                <a href="https://twitter.com/Chris_Tippmann">
+                    <img src="img/twitter-logo-button.png" alt="twitter icon">
+                </a>
+
+                <a href="https://www.instagram.com/chris_kilgour/">
+                    <img src="img/instagram-logo-button.png" alt="instagram icon">
+                </a>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
