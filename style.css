@@ -775,13 +775,14 @@
                             #accordion-wrapper {
                                 max-width: 250px;
                                 margin: 0 auto;
-                                display: inline-block;
-                                padding-left: 20px;
+                                display: inline-flexbox;
+                                padding-right: 750px;
+                                
                             }
 
                             /* css for the cards of the accordion drop down menu */
                             .card {
-                                background-color: rgb(223, 140, 140);
+                                background-color: rgb(116, 116, 116);
                                 color: #fff;
                                 padding: 10px 20px;
                                 border-radius: 3px;
@@ -791,7 +792,7 @@
 
                             /* css for the card titles of the accordion drop down menu */
                             .card-title {
-                                font-size: 18px;
+                                font-size: 30px;
                                 margin: 0;
                             }
 

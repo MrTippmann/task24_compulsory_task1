@@ -93,44 +93,4 @@ $(document).ready(function() {
        $(".hide").click(function(e) {
         $(e.target).hide( "slow" );
     });
-
-    // animatesthe fun button
-      $(".animationButton").on({
-        click: function(){
-        $(".animationButton")
-        .animate({width: "300px"})
-    
-            .animate({
-                    width: "200px",
-                    height: "200px",
-                    borderRadius: "50%",
-                    marginLeft: "210px",
-                    marginTop: "20px",
-                    backgroundColor: 'green',
-                    backgroundColor: 'purple'
-                },
-                15000,
-            );
-        }});
-
 });
-
-
-// functions to add the images to the saveForLaterPage
-function saveForLaterIndex() {
-
-    var DOM_img = document.createElement("img");
- DOM_img.src = "img/banner.jpg";
-
- document.getElementsByClassName("SaveForLater").appendChild(DOM_img);
-
-}
-
-function saveForLaterIndex() {
-
-    var DOM_img = document.createElement("img");
- DOM_img.src = "img/banner.jpg";
-
- document.getElementsByClassName("SaveForLater").appendChild(DOM_img);
-
-}
