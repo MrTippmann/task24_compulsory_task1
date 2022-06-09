@@ -875,36 +875,26 @@
                             }
                             
                             .projects div {
-                                display: inline-block;
-                                align-items: center;
-                                width: fit-content;
-                                height: 200px;
-                                padding-top: 75px;
-                            }
-                            
-                            .first-project video {
                                 margin: 15px 15px 0px;
                                 width: 200px;
                                 height: 200px;
+                                display: inline-block;
+                            }
+                            
+                            .first-project img {
+                                margin: 15px 15px 0px;
+                                width: 200px;
+                                height: 200px;
+                                display: inline-block;
                             }
                             
                             .second-project img {
                                 margin: 15px 15px 0px;
                                 width: 200px;
                                 height: 200px;
+                                display: inline-block;
                             }
-                            
-                            .third-project img {
-                                margin: 15px 15px 0px;
-                                width: 200px;
-                                height: 200px;
-                            }
-                            
-                            .fourth-project img {
-                                margin: 15px 15px 0px;
-                                width: 200px;
-                                height: 200px;
-                            }/*# sourceMappingURL=main.css.map */
+                          /*# sourceMappingURL=main.css.map */
 
                             /*Save for later*/
 
